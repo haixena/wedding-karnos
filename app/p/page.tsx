@@ -1,10 +1,10 @@
 import { Suspense } from "react";
-import WeddingInvitation from "./_components/man-component";
+import WomanWeddingInvitation from "./_components/woman-component";
 
 export default function Home() {
   return (
     <Suspense>
-      <WeddingInvitation />
+      <WomanWeddingInvitation />
     </Suspense>
   );
 }
