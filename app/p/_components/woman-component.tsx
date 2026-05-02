@@ -82,8 +82,8 @@ export default function WeddingInvitation() {
   const NameP = "Elinda Nurwahidah";
   const ParentNameL = "Bpk. Eme Casma (Alm.) & Ibu. Mimin";
   const ParentNameP = "Bpk. Dede Darusalam (Alm.) & Ibu. Esih Surayasih";
-  const DANA = ["083121171181", "WIDA KAFINO"];
-  const BANK = ["4303-0101-1349-536", "WIDA KARNO"];
+  // const DANA = ["083121171181", "WIDA KAFINO"];
+  const BANK = ["1340023281354", "ELINDA NURWAHIDAH"];
   const DAYDATE = "Minggu, 24 Mei 2026";
   const GMAPS =
     "https://www.google.com/maps/embed?pb=!4v1777712677583!6m8!1m7!1sTMYGgLV0mqaoo8jxvVAyxw!2m2!1d-6.744923188006399!2d108.2923159542643!3f204.25!4f-17.64!5f0.7820865974627469";
@@ -759,16 +759,16 @@ export default function WeddingInvitation() {
                 Undangan via transfer
               </p>
             </div>
-            <div className="">
+            {/* <div className="">
               <img className="w-[300px] mx-auto" src="/dana.png" alt="DANA" />
               <div className="text-lg">
                 <p>{DANA[0]}</p>
                 <div>a/n {DANA[1]}</div>
               </div>
-            </div>
+            </div> */}
 
             <div className="mt-20">
-              <img className="w-[300px] mx-auto" src="/bri.png" alt="BRI" />
+              <img className="w-[300px] mx-auto" src="/mandiri.png" alt="BRI" />
               <div className="text-lg">
                 <p>{BANK[0]}</p>
                 <div>a/n {BANK[1]}</div>
