@@ -695,8 +695,8 @@ export default function WeddingInvitation() {
         </section>
 
         {/* LOCATION */}
-        <section className="bg-[#FDF9F2] py-20">
-          <div className="max-w-2xl mx-auto text-center pb-20">
+        <section className="bg-[#FDF9F2] py-20 px-6">
+          <div className="max-w-2xl mx-auto text-center">
             <div className="reveal">
               <span
                 className="block text-[0.62rem] tracking-[0.4em] text-amber-600 uppercase mb-5"
@@ -719,29 +719,15 @@ export default function WeddingInvitation() {
                 Momen Bersama
               </h2> */}
             </div>
-            <div
-              className="reveal reveal-delay-1 grid grid-cols-3 gap-2 mx-auto pb-10"
-              style={{ gridTemplateRows: "160px 160px" }}
-            >
+            {/* Responsive iframe wrapper */}
+            <div className="reveal reveal-delay-1 relative w-full pb-[56.25%] h-0 overflow-hidden">
               <iframe
                 src={GMAPS}
-                width={700}
-                height={450}
-                style={{ border: 0 }}
+                className="absolute top-0 left-0 w-full h-full border-0"
                 allowFullScreen={true}
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
               />
-
-              {/* {["📷", "🌸", "💛", "🌿", "💍"].map((icon, i) => (
-                <div
-                  key={i}
-                  className={`bg-amber-50 border border-amber-200/40 flex items-center justify-center text-4xl text-amber-400/60 relative overflow-hidden ${i === 0 ? "row-span-2" : ""}`}
-                >
-                  <span className="relative z-10">{icon}</span>
-                  <div className="absolute inset-0 bg-gradient-to-br from-amber-100/50 to-transparent" />
-                </div>
-              ))} */}
             </div>
           </div>
         </section>
@@ -952,7 +938,7 @@ export default function WeddingInvitation() {
             className="text-[0.78rem] text-zinc-700 tracking-[0.15em]"
             style={{ fontFamily: "'Cinzel', serif" }}
           >
-            24 · 06 · 2026 · MAJALENGKA
+            24 · 05 · 2026 · MAJALENGKA
           </p>
           <div className="mt-6">
             <FloralDivider />
